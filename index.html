@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TODOs 2023</title>
+	<!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<!-- Header container  -->
+	<header>
+		<h1>TODOs</h1>
+		<!-- Task Input and Submission -->
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+
+	<!-- Main container -->
+	<main>
+		<section class="task-list">
+			<div class="status-bar">
+				<!-- Total tasks -->
+				<div>
+					<h2> <span id="task-counter">0</span> Tasks</h2>
+				</div>
+				<!-- Tasks status -->
+				<div class="status">
+					<p class="tasks-status"><span>Completed</span> <span id="ct-counter">0</span> &nbsp; <span>Uncomplete</span> <span id="uct-counter">0</span> </span> </p>
+				</div>
+			</div>
+			<h1 id="no-tasks">Nothing to do...?</h1>
+			<div id="tasks">
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="checkbox" 
+							class="custom-checkbox">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Remove</button>
+					</div>
+				</div> -->
+
+			</div>
+			<!-- Mark all as complete and delete completed  -->
+			<div class="manage-tasks">
+				<button id="mark-all-as-complete"> <i class="fa fa-check"></i> Complete all tasks</button>
+				<button id="clear-completed">Clear completed</button>
+			</div>
+		</section>
+	</main>
+	<!-- Js file  -->
+	<script src="script.js"></script>
+</body>
+</html>
